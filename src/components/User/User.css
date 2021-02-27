@@ -1,0 +1,24 @@
+.users-container{
+   display: flex;
+}
+.users-info{
+    width: 75%;
+    border-right: 1px solid gray;
+}
+.users-update{
+    padding: 10px;
+}
+.btnStyle{
+    width: 200px;
+    height: 40px;
+    background: goldenrod;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor:pointer;
+    transition: all linear .5s;
+}
+.btnStyle:hover{
+    background: brown;
+    color: blueviolet;
+}

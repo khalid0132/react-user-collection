@@ -10,17 +10,15 @@ const UserCart = (props) => {
         const unit = userInfo[i];
         totalSalary = totalSalary + unit.salary;
     }
+    
+    //Reduce used instead of For loop
+  // const totalSalary = userInfo.reduce( (totalSalary, unit) => totalSalary + unit.salary,0);
 
-    // const salary = props.salary;
-    // console.log(salary);
-    // let totalSalary = 0;
-    // for (let i = 0; i < salary.length; i++) {
-    //     const unit = salary[i];
-    //     totalSalary = totalSalary + unit;
-    // }
 
   return (
-    <div>
+    <div>{
+       userInfo.map((select => <p>Name:{select.name}</p>))
+      }
       <h4>Users total salary: ${totalSalary}</h4>
     </div>
   );
